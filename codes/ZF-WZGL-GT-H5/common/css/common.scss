@@ -1,0 +1,132 @@
+$defalut-color:#2481EE;
+.flex-n{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.flex-w{
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-1{
+	flex: 1;
+}
+.fac{
+	align-items: center;
+}
+.fja{
+	justify-content: space-around;
+}
+.fjb{
+	justify-content: space-between;
+}
+.fjc{
+	justify-content: center;
+}
+.fje{
+	justify-content: flex-end;
+}
+
+@for $i from 5 through 100 {
+  .plr-#{$i}{
+    padding:{
+      left: #{$i}rpx;
+      right:#{$i}rpx;
+    }
+  }
+  .ptb-#{$i}{
+    padding:{
+      top: #{$i}rpx;
+      bottom:#{$i}rpx;
+    }
+  }
+  .pr-#{$i}{
+    padding-right:#{$i}rpx ;
+  }
+  .pt-#{$i}{
+    padding-top:#{$i}rpx ;
+  }
+  .pl-#{$i}{
+    padding-left:#{$i}rpx ;
+  }
+  .pb-#{$i}{
+    padding-bottom:#{$i}rpx ;
+  }
+}
+@for $i from 5 through 100 {
+  .mlr-#{$i}{
+    margin:{
+      left: #{$i}rpx;
+      right:#{$i}rpx;
+    }
+  }
+  .mtb-#{$i}{
+    margin:{
+      top: #{$i}rpx;
+      bottom:#{$i}rpx;
+    }
+  }
+  .mr-#{$i}{
+    margin-right:#{$i}rpx ;
+  }
+  .mt-#{$i}{
+    margin-top:#{$i}rpx!important;
+  }
+  .ml-#{$i}{
+    margin-left:#{$i}rpx ;
+  }
+  .mb-#{$i}{
+    margin-bottom:#{$i}rpx ;
+  }
+}
+.line{
+	border-top: 1px solid #E4E4E4;
+}
+.nowarp{
+	white-space: nowrap;
+}
+.line-1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+view{
+	word-break: break-all;
+}
+.shadow-1{
+	background:white;
+	box-shadow:0rpx 1rpx 10rpx 0rpx rgba(53,64,84,0.1);
+	border-radius:2rpx;
+}
+.shadow-2{
+	background:white;
+	box-shadow:0rpx 1rpx 30rpx 0rpx rgba(53,64,84,0.1);
+	border-radius:2rpx;
+}
+.comm-detail-text{
+	font-size: 30rpx;
+	width: 100%;
+	color: #999999;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	line-height: 48rpx;
+	.right{
+		text-align: right;
+	}
+}
+.common-infolist-title{
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 0 24rpx;
+	.title{
+		font-weight:600;
+		font-size: 32rpx;
+	}
+}
